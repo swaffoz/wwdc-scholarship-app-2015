@@ -1,25 +1,92 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="O2m-Ky-Glv">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Neuton-Regular.ttf">
+            <string>Neuton-Regular</string>
+        </mutableArray>
+    </customFonts>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Card Table View Controller-->
+        <scene sceneID="oEM-QB-tju">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <tableViewController id="O2m-Ky-Glv" customClass="CardTableViewController" customModule="Zane_Swafford" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="300" sectionHeaderHeight="22" sectionFooterHeight="22" id="VS2-e1-Kmu">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="sectionIndexTrackingBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="CardTableViewCell" rowHeight="300" id="YDj-m0-7cJ" customClass="CardTableViewCell" customModule="Zane_Swafford" customModuleProvider="target">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="YDj-m0-7cJ" id="M6D-h8-zVf">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BUb-Gu-cSf" userLabel="Card View">
+                                            <rect key="frame" x="28" y="32" width="544" height="280"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CnS-J8-Rb6" userLabel="Cover Image View">
+                                                    <rect key="frame" x="0.0" y="0.0" width="544" height="160"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="160" id="ab6-qa-RJr"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="npq-Oc-6QF">
+                                                    <rect key="frame" x="8" y="168" width="528" height="104"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                                    <fontDescription key="fontDescription" name="Neuton-Regular" family="Neuton" pointSize="19"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstItem="npq-Oc-6QF" firstAttribute="top" secondItem="CnS-J8-Rb6" secondAttribute="bottom" constant="8" id="6ki-v3-iHw"/>
+                                                <constraint firstAttribute="trailing" secondItem="npq-Oc-6QF" secondAttribute="trailing" constant="8" id="GOj-9g-avX"/>
+                                                <constraint firstItem="npq-Oc-6QF" firstAttribute="leading" secondItem="BUb-Gu-cSf" secondAttribute="leading" constant="8" id="LBb-5x-EiP"/>
+                                                <constraint firstItem="CnS-J8-Rb6" firstAttribute="leading" secondItem="BUb-Gu-cSf" secondAttribute="leading" id="ZZL-Vb-C7O"/>
+                                                <constraint firstItem="CnS-J8-Rb6" firstAttribute="top" secondItem="BUb-Gu-cSf" secondAttribute="top" id="h9V-IN-OOb"/>
+                                                <constraint firstAttribute="trailing" secondItem="CnS-J8-Rb6" secondAttribute="trailing" id="ufq-mN-a7P"/>
+                                                <constraint firstAttribute="bottom" secondItem="npq-Oc-6QF" secondAttribute="bottom" constant="8" id="vMc-Wb-Vdy"/>
+                                            </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                    <integer key="value" value="12"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    <constraints>
+                                        <constraint firstItem="BUb-Gu-cSf" firstAttribute="leading" secondItem="M6D-h8-zVf" secondAttribute="leadingMargin" constant="20" id="Te6-Tt-Vjn"/>
+                                        <constraint firstAttribute="centerX" secondItem="BUb-Gu-cSf" secondAttribute="centerX" id="qwf-sj-0TI"/>
+                                        <constraint firstItem="BUb-Gu-cSf" firstAttribute="top" secondItem="M6D-h8-zVf" secondAttribute="topMargin" constant="24" id="rsZ-If-SMp"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="BUb-Gu-cSf" secondAttribute="trailing" constant="20" id="vTQ-X6-Qvp"/>
+                                        <constraint firstItem="BUb-Gu-cSf" firstAttribute="bottom" secondItem="M6D-h8-zVf" secondAttribute="bottomMargin" constant="20" id="yXR-QR-Ql3"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="cardTextView" destination="npq-Oc-6QF" id="E12-Qi-6fl"/>
+                                    <outlet property="cardView" destination="BUb-Gu-cSf" id="qio-X7-chB"/>
+                                    <outlet property="coverImageView" destination="CnS-J8-Rb6" id="JVh-RR-5yQ"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="O2m-Ky-Glv" id="zvw-Wl-Kwn"/>
+                            <outlet property="delegate" destination="O2m-Ky-Glv" id="Pmn-tM-Fnw"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KsJ-A9-Qg0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="261" y="414"/>
         </scene>
     </scenes>
 </document>

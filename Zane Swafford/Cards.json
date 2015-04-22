@@ -1,0 +1,32 @@
+{
+    "cards" :  [
+                   {
+                        "text": "This is a test.",
+                        "coverPhoto": "car.jpg",
+                        "photoAlbum": ["", "", ""],
+                        "url": "http://www.otters.io",
+                        "location": [0.0, 0.0]
+                    },
+                    {
+                        "text": "This is a test.",
+                        "coverPhoto": "car.jpg",
+                        "photoAlbum": ["", "", ""],
+                        "url": "http://www.otters.io",
+                        "location": [0.0, 0.0]
+                    },
+                    {
+                        "text": "This is a test.",
+                        "coverPhoto": "car.jpg",
+                        "photoAlbum": ["", "", ""],
+                        "url": "http://www.otters.io",
+                        "location": [0.0, 0.0]
+                    },
+                    {
+                        "text": "This is a test.",
+                        "coverPhoto": "car.jpg",
+                        "photoAlbum": [],
+                        "url": "",
+                        "location": []
+                    }
+                ]
+}

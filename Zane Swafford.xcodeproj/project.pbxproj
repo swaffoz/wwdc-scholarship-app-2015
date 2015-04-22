@@ -8,11 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		2FC65CD41AE81695006338E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC65CD31AE81695006338E7 /* AppDelegate.swift */; };
-		2FC65CD61AE81695006338E7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC65CD51AE81695006338E7 /* ViewController.swift */; };
 		2FC65CD91AE81695006338E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FC65CD71AE81695006338E7 /* Main.storyboard */; };
 		2FC65CDB1AE81695006338E7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FC65CDA1AE81695006338E7 /* Images.xcassets */; };
 		2FC65CDE1AE81695006338E7 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2FC65CDC1AE81695006338E7 /* LaunchScreen.xib */; };
 		2FC65CEA1AE81695006338E7 /* Zane_SwaffordTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC65CE91AE81695006338E7 /* Zane_SwaffordTests.swift */; };
+		2FC65CF41AE8173F006338E7 /* CardTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC65CF31AE8173F006338E7 /* CardTableViewController.swift */; };
+		2FC65CF61AE8185C006338E7 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC65CF51AE8185C006338E7 /* Card.swift */; };
+		2FC65CF81AE81F01006338E7 /* SwingingCellAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC65CF71AE81F01006338E7 /* SwingingCellAnimator.swift */; };
+		2FC65CFA1AE81F5E006338E7 /* CardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC65CF91AE81F5E006338E7 /* CardTableViewCell.swift */; };
+		2FC65CFC1AE827C8006338E7 /* Cards.json in Resources */ = {isa = PBXBuildFile; fileRef = 2FC65CFB1AE827C8006338E7 /* Cards.json */; };
+		2FC65CFF1AE830E2006338E7 /* MerriweatherSans-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2FC65CFD1AE82FE3006338E7 /* MerriweatherSans-Bold.otf */; };
+		2FC65D001AE830E2006338E7 /* Neuton-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2FC65CFE1AE82FF1006338E7 /* Neuton-Regular.ttf */; };
+		2FC65D021AE83C88006338E7 /* UIViewHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC65D011AE83C88006338E7 /* UIViewHelpers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,13 +36,20 @@
 		2FC65CCE1AE81695006338E7 /* Zane Swafford.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Zane Swafford.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FC65CD21AE81695006338E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2FC65CD31AE81695006338E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2FC65CD51AE81695006338E7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2FC65CD81AE81695006338E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2FC65CDA1AE81695006338E7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		2FC65CDD1AE81695006338E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		2FC65CE31AE81695006338E7 /* Zane SwaffordTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Zane SwaffordTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FC65CE81AE81695006338E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2FC65CE91AE81695006338E7 /* Zane_SwaffordTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Zane_SwaffordTests.swift; sourceTree = "<group>"; };
+		2FC65CF31AE8173F006338E7 /* CardTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardTableViewController.swift; sourceTree = "<group>"; };
+		2FC65CF51AE8185C006338E7 /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		2FC65CF71AE81F01006338E7 /* SwingingCellAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwingingCellAnimator.swift; sourceTree = "<group>"; };
+		2FC65CF91AE81F5E006338E7 /* CardTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardTableViewCell.swift; sourceTree = "<group>"; };
+		2FC65CFB1AE827C8006338E7 /* Cards.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Cards.json; sourceTree = "<group>"; };
+		2FC65CFD1AE82FE3006338E7 /* MerriweatherSans-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "MerriweatherSans-Bold.otf"; path = "../../../Downloads/merriweather-sans/MerriweatherSans-Bold.otf"; sourceTree = "<group>"; };
+		2FC65CFE1AE82FF1006338E7 /* Neuton-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Neuton-Regular.ttf"; path = "../../../Downloads/neuton/Neuton-Regular.ttf"; sourceTree = "<group>"; };
+		2FC65D011AE83C88006338E7 /* UIViewHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewHelpers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,7 +92,11 @@
 			isa = PBXGroup;
 			children = (
 				2FC65CD31AE81695006338E7 /* AppDelegate.swift */,
-				2FC65CD51AE81695006338E7 /* ViewController.swift */,
+				2FC65CF31AE8173F006338E7 /* CardTableViewController.swift */,
+				2FC65CF91AE81F5E006338E7 /* CardTableViewCell.swift */,
+				2FC65CF51AE8185C006338E7 /* Card.swift */,
+				2FC65CF71AE81F01006338E7 /* SwingingCellAnimator.swift */,
+				2FC65D011AE83C88006338E7 /* UIViewHelpers.swift */,
 				2FC65CD71AE81695006338E7 /* Main.storyboard */,
 				2FC65CDA1AE81695006338E7 /* Images.xcassets */,
 				2FC65CDC1AE81695006338E7 /* LaunchScreen.xib */,
@@ -90,6 +108,9 @@
 		2FC65CD11AE81695006338E7 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				2FC65CFB1AE827C8006338E7 /* Cards.json */,
+				2FC65CFD1AE82FE3006338E7 /* MerriweatherSans-Bold.otf */,
+				2FC65CFE1AE82FF1006338E7 /* Neuton-Regular.ttf */,
 				2FC65CD21AE81695006338E7 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -192,9 +213,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2FC65CFF1AE830E2006338E7 /* MerriweatherSans-Bold.otf in Resources */,
+				2FC65D001AE830E2006338E7 /* Neuton-Regular.ttf in Resources */,
 				2FC65CD91AE81695006338E7 /* Main.storyboard in Resources */,
 				2FC65CDE1AE81695006338E7 /* LaunchScreen.xib in Resources */,
 				2FC65CDB1AE81695006338E7 /* Images.xcassets in Resources */,
+				2FC65CFC1AE827C8006338E7 /* Cards.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,7 +236,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2FC65CD61AE81695006338E7 /* ViewController.swift in Sources */,
+				2FC65CFA1AE81F5E006338E7 /* CardTableViewCell.swift in Sources */,
+				2FC65CF41AE8173F006338E7 /* CardTableViewController.swift in Sources */,
+				2FC65D021AE83C88006338E7 /* UIViewHelpers.swift in Sources */,
+				2FC65CF61AE8185C006338E7 /* Card.swift in Sources */,
+				2FC65CF81AE81F01006338E7 /* SwingingCellAnimator.swift in Sources */,
 				2FC65CD41AE81695006338E7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
