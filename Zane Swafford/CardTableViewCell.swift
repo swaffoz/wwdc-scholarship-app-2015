@@ -26,6 +26,20 @@ class CardTableViewCell: UITableViewCell {
         if let coverPhotoName = card.coverPhotoName {
             self.coverImageView.image = UIImage(named: coverPhotoName)
         }
-        self.cardTextView.text = card.text
+        
+        if let cardText = card.text,
+           let merriweather = UIFont(name: "MerriweatherSans-Bold", size: 19) {
+            let attributes = [NSTextEffectAttributeName: NSTextEffectLetterpressStyle,
+                                    NSFontAttributeName: merriweather,
+                         NSForegroundColorAttributeName: UIColor.grayishColor()]
+            
+            self.cardTextView.attributedText = NSAttributedString(string: cardText, attributes: attributes)
+        }
+        
+        if let backgroundImage = UIImage(named: "creampaper") {
+            self.cardView.backgroundColor = UIColor(patternImage: backgroundImage)
+            self.cardView.opaque = true
+            self.cardView.layer.opaque = true
+        }
     }
 }

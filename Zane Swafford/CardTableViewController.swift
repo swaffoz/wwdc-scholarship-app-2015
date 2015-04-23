@@ -42,7 +42,7 @@ class CardTableViewController: UITableViewController {
         tableView.rowHeight = UITableViewAutomaticDimension
         
         loadCards()
-        //setupGyroscope()
+        setupGyroscope()
         //setupParallax()
     }
 
@@ -82,14 +82,11 @@ class CardTableViewController: UITableViewController {
     func setupGyroscope() {
         manager = CMMotionManager()
         if manager!.deviceMotionAvailable {
-            manager!.deviceMotionUpdateInterval = 1.0/60.0
+            manager!.deviceMotionUpdateInterval = 0.01
             manager!.startDeviceMotionUpdatesToQueue(NSOperationQueue.mainQueue()) {
                 [weak self] (data: CMDeviceMotion!, error: NSError!) in
-                var rotation = (atan2(data.gravity.x, 1)) * -0.5
+                var rotation = atan2(data.gravity.x, 1) * -0.16
                 
-                println("ROTATION: \(rotation)\nGRAVITY.X: \(data.gravity.x)")
-                
-                println("ROTATION: \(rotation)")
                 for cell in self?.tableView.visibleCells() as! [CardTableViewCell] {
                     cell.cardView.transform = CGAffineTransformMakeRotation(CGFloat(rotation))
                 }
