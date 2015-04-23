@@ -38,7 +38,7 @@ class CardTableViewController: UITableViewController {
         tableView.backgroundView!.layer.insertSublayer(gradient, atIndex: 0)
         gradient.locations = locations
         
-        tableView.estimatedRowHeight = 300
+        tableView.estimatedRowHeight = 360
         tableView.rowHeight = UITableViewAutomaticDimension
         
         loadCards()
@@ -51,7 +51,7 @@ class CardTableViewController: UITableViewController {
         if !preventAnimation.contains(indexPath) {
             preventAnimation.insert(indexPath)
             SwingingCellAnimator.animateIntro(cell)
-            cell.addParallaxWithOffsets(xOffset: -6, yOffset: -6)
+            //cell.addParallaxWithOffsets(xOffset: -6, yOffset: -6)
         }
     }
     
@@ -60,7 +60,7 @@ class CardTableViewController: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        return 300
+        return 360
     }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
