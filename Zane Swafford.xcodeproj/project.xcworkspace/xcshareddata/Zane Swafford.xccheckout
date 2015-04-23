@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>2054B065-DA9A-4DCD-8841-60A4639E2320</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Zane Swafford</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>04A9B613B8EF622B07B7B9EABC81E5C57E5C9E1C</key>
+		<string>bitbucket.org:zswafford/wwdc-2015-scholarship-app.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Zane Swafford.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>04A9B613B8EF622B07B7B9EABC81E5C57E5C9E1C</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>bitbucket.org:zswafford/wwdc-2015-scholarship-app.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>04A9B613B8EF622B07B7B9EABC81E5C57E5C9E1C</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>04A9B613B8EF622B07B7B9EABC81E5C57E5C9E1C</string>
+			<key>IDESourceControlWCCName</key>
+			<string>wwdc-2015-scholarship-app</string>
+		</dict>
+	</array>
+</dict>
+</plist>
