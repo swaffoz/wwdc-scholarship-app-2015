@@ -18,7 +18,8 @@
 		2FC65CFA1AE81F5E006338E7 /* CardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC65CF91AE81F5E006338E7 /* CardTableViewCell.swift */; };
 		2FC65CFC1AE827C8006338E7 /* Cards.json in Resources */ = {isa = PBXBuildFile; fileRef = 2FC65CFB1AE827C8006338E7 /* Cards.json */; };
 		2FC65D021AE83C88006338E7 /* UIViewHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC65D011AE83C88006338E7 /* UIViewHelpers.swift */; };
-		2FD24B6B1AE87E84001E891D /* MerriweatherSans-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2FD24B6A1AE87E84001E891D /* MerriweatherSans-Bold.otf */; };
+		2FD24B6E1AE89E49001E891D /* MerriweatherSans-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2FD24B6A1AE87E84001E891D /* MerriweatherSans-Bold.otf */; };
+		2FD24B6F1AE89E49001E891D /* Neuton-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2FD24B6C1AE87EA7001E891D /* Neuton-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -212,8 +213,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2FD24B6E1AE89E49001E891D /* MerriweatherSans-Bold.otf in Resources */,
+				2FD24B6F1AE89E49001E891D /* Neuton-Regular.ttf in Resources */,
 				2FC65CD91AE81695006338E7 /* Main.storyboard in Resources */,
-				2FD24B6B1AE87E84001E891D /* MerriweatherSans-Bold.otf in Resources */,
 				2FC65CDE1AE81695006338E7 /* LaunchScreen.xib in Resources */,
 				2FC65CDB1AE81695006338E7 /* Images.xcassets in Resources */,
 				2FC65CFC1AE827C8006338E7 /* Cards.json in Resources */,
