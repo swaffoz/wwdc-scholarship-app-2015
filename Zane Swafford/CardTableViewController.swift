@@ -12,7 +12,7 @@ import CoreMotion
 class CardTableViewController: UITableViewController {
     var manager: CMMotionManager?
     var cards: [Card] = []
-    var preventAnimation = Set<NSIndexPath>()
+    var introAlreadyShown: Bool = false
     
     func loadCards() {
         let path = NSBundle.mainBundle().pathForResource("Cards", ofType: "json")
@@ -43,14 +43,10 @@ class CardTableViewController: UITableViewController {
         
         loadCards()
         setupGyroscope()
-        //setupParallax()
     }
 
     // MARK: UITableView
     override func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
-        if !preventAnimation.contains(indexPath) {
-            preventAnimation.insert(indexPath)
-        }
         
         if let firstCell = self.tableView.visibleCells().first as? UITableViewCell {
             if let topIndexPath = tableView.indexPathForCell(firstCell) {
@@ -61,8 +57,6 @@ class CardTableViewController: UITableViewController {
                 }
             }
         }
-            //cell.addParallaxWithOffsets(xOffset: -6, yOffset: -6)
-        //}
     }
     
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
@@ -70,10 +64,10 @@ class CardTableViewController: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        if indexPath.row == 0 && !preventAnimation.contains(indexPath) {
+        if indexPath.row == 0 && !introAlreadyShown {
             return self.view.bounds.height
-        } else if indexPath.row == 0 && preventAnimation.contains(indexPath) {
-            return 160
+        } else if indexPath.row == 0 && introAlreadyShown {
+            return 100
         } else if indexPath.row == cards.count+1 {
             return 260
         } else {
@@ -83,6 +77,17 @@ class CardTableViewController: UITableViewController {
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return cards.count + 2
+    }
+    
+    override func tableView(tableView: UITableView, didEndDisplayingCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
+        if indexPath.row == 0  {
+            if let introCell = cell as? IntroTableViewCell {
+                introCell.downImage.hidden = true
+                introCell.howdyLabel.alpha = 0
+                introCell.nameLabel.text = "Zane Swafford"
+                introAlreadyShown = true
+            }
+        }
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
@@ -119,13 +124,6 @@ class CardTableViewController: UITableViewController {
             }
         } else {
             println("No device motion 😦")
-        }
-    }
-    
-    // MARK: Parallax
-    func setupParallax() {
-        for cell in self.tableView.visibleCells() as! [CardTableViewCell] {
-            cell.addParallaxWithOffsets(xOffset: 20, yOffset: 20)
         }
     }
     
