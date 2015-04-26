@@ -28,7 +28,7 @@ class CardTableViewCell: UITableViewCell {
         }
         
         if let cardText = card.text,
-           let merriweather = UIFont(name: "Neuton-Regular", size: 19) {
+           let merriweather = UIFont(name: "Neuton-Regular", size: 24) {
             let attributes = [NSTextEffectAttributeName: NSTextEffectLetterpressStyle,
                                     NSFontAttributeName: merriweather,
                          NSForegroundColorAttributeName: UIColor.grayishColor()]

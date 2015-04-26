@@ -10,7 +10,6 @@
 		2F8EE1571AEC46090036A2E7 /* IntroTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8EE1561AEC46090036A2E7 /* IntroTableViewCell.swift */; };
 		2FC65CD41AE81695006338E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC65CD31AE81695006338E7 /* AppDelegate.swift */; };
 		2FC65CD91AE81695006338E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FC65CD71AE81695006338E7 /* Main.storyboard */; };
-		2FC65CDB1AE81695006338E7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FC65CDA1AE81695006338E7 /* Images.xcassets */; };
 		2FC65CDE1AE81695006338E7 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2FC65CDC1AE81695006338E7 /* LaunchScreen.xib */; };
 		2FC65CEA1AE81695006338E7 /* Zane_SwaffordTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC65CE91AE81695006338E7 /* Zane_SwaffordTests.swift */; };
 		2FC65CF41AE8173F006338E7 /* CardTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC65CF31AE8173F006338E7 /* CardTableViewController.swift */; };
@@ -22,6 +21,8 @@
 		2FC65D041AE8A970006338E7 /* UIColorHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC65D031AE8A970006338E7 /* UIColorHelpers.swift */; };
 		2FD24B6E1AE89E49001E891D /* MerriweatherSans-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2FD24B6A1AE87E84001E891D /* MerriweatherSans-Bold.otf */; };
 		2FD24B6F1AE89E49001E891D /* Neuton-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2FD24B6C1AE87EA7001E891D /* Neuton-Regular.ttf */; };
+		2FF448161AED9D5D003230BD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FF448151AED9D5D003230BD /* Images.xcassets */; };
+		2FF448171AED9D5D003230BD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FF448151AED9D5D003230BD /* Images.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +41,6 @@
 		2FC65CD21AE81695006338E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2FC65CD31AE81695006338E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2FC65CD81AE81695006338E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		2FC65CDA1AE81695006338E7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		2FC65CDD1AE81695006338E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		2FC65CE31AE81695006338E7 /* Zane SwaffordTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Zane SwaffordTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FC65CE81AE81695006338E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -54,6 +54,7 @@
 		2FC65D031AE8A970006338E7 /* UIColorHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorHelpers.swift; sourceTree = "<group>"; };
 		2FD24B6A1AE87E84001E891D /* MerriweatherSans-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MerriweatherSans-Bold.otf"; sourceTree = "<group>"; };
 		2FD24B6C1AE87EA7001E891D /* Neuton-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Neuton-Regular.ttf"; sourceTree = "<group>"; };
+		2FF448151AED9D5D003230BD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,7 +105,7 @@
 				2FC65CF71AE81F01006338E7 /* SwingingCellAnimator.swift */,
 				2FC65D011AE83C88006338E7 /* UIViewHelpers.swift */,
 				2FC65CD71AE81695006338E7 /* Main.storyboard */,
-				2FC65CDA1AE81695006338E7 /* Images.xcassets */,
+				2FF448151AED9D5D003230BD /* Images.xcassets */,
 				2FC65CDC1AE81695006338E7 /* LaunchScreen.xib */,
 				2FC65CD11AE81695006338E7 /* Supporting Files */,
 			);
@@ -222,8 +223,8 @@
 				2FD24B6E1AE89E49001E891D /* MerriweatherSans-Bold.otf in Resources */,
 				2FD24B6F1AE89E49001E891D /* Neuton-Regular.ttf in Resources */,
 				2FC65CD91AE81695006338E7 /* Main.storyboard in Resources */,
+				2FF448161AED9D5D003230BD /* Images.xcassets in Resources */,
 				2FC65CDE1AE81695006338E7 /* LaunchScreen.xib in Resources */,
-				2FC65CDB1AE81695006338E7 /* Images.xcassets in Resources */,
 				2FC65CFC1AE827C8006338E7 /* Cards.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -232,6 +233,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2FF448171AED9D5D003230BD /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -378,10 +380,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_OPTIMIZATION_LEVEL = fast;
 				INFOPLIST_FILE = "Zane Swafford/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
+				VALIDATE_PRODUCT = YES;
 			};
 			name = Debug;
 		};
@@ -389,6 +393,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_OPTIMIZATION_LEVEL = fast;
 				INFOPLIST_FILE = "Zane Swafford/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";

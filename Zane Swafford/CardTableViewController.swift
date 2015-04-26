@@ -38,23 +38,20 @@ class CardTableViewController: UITableViewController {
         tableView.backgroundView!.layer.insertSublayer(gradient, atIndex: 0)
         gradient.locations = locations
         
-        tableView.estimatedRowHeight = 360
-        tableView.rowHeight = UITableViewAutomaticDimension
+        //tableView.estimatedRowHeight = 360
+        //tableView.rowHeight = UITableViewAutomaticDimension
         
         loadCards()
-        setupGyroscope()
+        setupDeviceMotion()
     }
 
     // MARK: UITableView
     override func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
-        
-        if let firstCell = self.tableView.visibleCells().first as? UITableViewCell {
-            if let topIndexPath = tableView.indexPathForCell(firstCell) {
-                if (indexPath.row > topIndexPath.row) {
-                    SwingingCellAnimator.animateIntroUp(cell)
-                } else {
-                    SwingingCellAnimator.animateIntroDown(cell)
-                }
+        if let topIndexPath = self.tableView.indexPathsForVisibleRows()!.first as? NSIndexPath {
+            if (indexPath.row > topIndexPath.row) {
+                SwingingCellAnimator.animateIntroUp(cell)
+            } else {
+                SwingingCellAnimator.animateIntroDown(cell)
             }
         }
     }
@@ -64,14 +61,14 @@ class CardTableViewController: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        if indexPath.row == 0 && !introAlreadyShown {
-            return self.view.bounds.height
-        } else if indexPath.row == 0 && introAlreadyShown {
-            return 100
+        if indexPath.row > 0 && indexPath.row <= cards.count {
+            return 360
         } else if indexPath.row == cards.count+1 {
             return 260
+        } else if introAlreadyShown {
+            return 100
         } else {
-            return 360
+            return self.view.bounds.height
         }
     }
     
@@ -91,16 +88,16 @@ class CardTableViewController: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        if indexPath.row == 0 {
-            let cell = tableView.dequeueReusableCellWithIdentifier("Intro", forIndexPath: indexPath) as! IntroTableViewCell
-            return cell
-        } else if indexPath.row > cards.count {
-            let cell = tableView.dequeueReusableCellWithIdentifier("Outro", forIndexPath: indexPath) as! UITableViewCell
-            return cell
-        } else {
+        if indexPath.row > 0 && indexPath.row <= cards.count {
             let cell = tableView.dequeueReusableCellWithIdentifier("Card", forIndexPath: indexPath) as! CardTableViewCell
             let card = cards[indexPath.row-1]
             cell.useCard(card)
+            return cell
+        } else if indexPath.row == 0 {
+            let cell = tableView.dequeueReusableCellWithIdentifier("Intro", forIndexPath: indexPath) as! IntroTableViewCell
+            return cell
+        } else {
+            let cell = tableView.dequeueReusableCellWithIdentifier("Outro", forIndexPath: indexPath) as! UITableViewCell
             return cell
         }
     }
@@ -109,8 +106,8 @@ class CardTableViewController: UITableViewController {
         return false
     }
     
-    // MARK: Gyroscope
-    func setupGyroscope() {
+    // MARK: DeviceMotion
+    func setupDeviceMotion() {
         manager = CMMotionManager()
         if manager!.deviceMotionAvailable {
             manager!.deviceMotionUpdateInterval = 0.01
@@ -125,15 +122,7 @@ class CardTableViewController: UITableViewController {
                 }
             }
         } else {
-            println("No device motion 😦")
-        }
-    }
-    
-    // MARK: Rotation Animation
-    override func willAnimateRotationToInterfaceOrientation(toInterfaceOrientation: UIInterfaceOrientation, duration: NSTimeInterval) {
-        if let bgGradient = tableView.backgroundView?.layer.sublayers[0] as? CALayer,
-           let bgView = tableView.backgroundView{
-            bgGradient.frame = bgView.bounds
+            println("No device motion available 😦")
         }
     }
 }

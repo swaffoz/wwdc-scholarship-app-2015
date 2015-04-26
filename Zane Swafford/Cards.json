@@ -1,32 +1,24 @@
 {
     "cards" :  [
                    {
-                        "text": "This is my face. Beard subject to Change",
-                        "coverPhoto": "car.jpg",
-                        "photoAlbum": ["", "", ""],
-                        "url": "http://www.otters.io",
-                        "location": [0.0, 0.0]
+                        "text": "This is me.\nBeard is subject to change.",
+                        "coverPhoto": "me.jpg"
                     },
                     {
-                        "text": "I'm a student at Fort Hays State University. I'm studying Computer Science and Spanish",
-                        "coverPhoto": "car.jpg",
-                        "photoAlbum": ["", "", ""],
-                        "url": "http://www.otters.io",
-                        "location": [0.0, 0.0]
+                        "text": "I live in the peaceful town of Hays, Kansas. Population: 21,000",
+                        "coverPhoto": "hays.jpg"
+                    },
+                    {
+                        "text": "I'm a student at Fort Hays State University.\nI'm studying Computer Science and Spanish",
+                        "coverPhoto": "school.jpg"
                     },
                     {
                         "text": "I love building apps, blogging, and working on my tiny car.",
-                        "coverPhoto": "car.jpg",
-                        "photoAlbum": ["", "", ""],
-                        "url": "http://www.otters.io",
-                        "location": [0.0, 0.0]
+                        "coverPhoto": "car.jpg"
                     },
                     {
-                        "text": "Looking over all these submissions must be a lot of work. You deserve a puppy!",
-                        "coverPhoto": "puppy.png",
-                        "photoAlbum": [],
-                        "url": "",
-                        "location": []
+                        "text": "Looking over these submissions must be quite a lot of work.\nYou deserve a puppy!",
+                        "coverPhoto": "puppy.png"
                     }
                 ]
 }
