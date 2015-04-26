@@ -50,9 +50,19 @@ class CardTableViewController: UITableViewController {
     override func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
         if !preventAnimation.contains(indexPath) {
             preventAnimation.insert(indexPath)
-            SwingingCellAnimator.animateIntro(cell)
-            //cell.addParallaxWithOffsets(xOffset: -6, yOffset: -6)
         }
+        
+        if let firstCell = self.tableView.visibleCells().first as? UITableViewCell {
+            if let topIndexPath = tableView.indexPathForCell(firstCell) {
+                if (indexPath.row > topIndexPath.row) {
+                    SwingingCellAnimator.animateIntroUp(cell)
+                } else {
+                    SwingingCellAnimator.animateIntroDown(cell)
+                }
+            }
+        }
+            //cell.addParallaxWithOffsets(xOffset: -6, yOffset: -6)
+        //}
     }
     
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
@@ -60,18 +70,34 @@ class CardTableViewController: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        return 360
+        if indexPath.row == 0 && !preventAnimation.contains(indexPath) {
+            return self.view.bounds.height
+        } else if indexPath.row == 0 && preventAnimation.contains(indexPath) {
+            return 160
+        } else if indexPath.row == cards.count+1 {
+            return 260
+        } else {
+            return 360
+        }
     }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return cards.count
+        return cards.count + 2
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("CardTableViewCell", forIndexPath: indexPath) as! CardTableViewCell
-        let card = cards[indexPath.row]
-        cell.useCard(card)
-        return cell
+        if indexPath.row == 0 {
+            let cell = tableView.dequeueReusableCellWithIdentifier("Intro", forIndexPath: indexPath) as! IntroTableViewCell
+            return cell
+        } else if indexPath.row > cards.count {
+            let cell = tableView.dequeueReusableCellWithIdentifier("Outro", forIndexPath: indexPath) as! UITableViewCell
+            return cell
+        } else {
+            let cell = tableView.dequeueReusableCellWithIdentifier("Card", forIndexPath: indexPath) as! CardTableViewCell
+            let card = cards[indexPath.row-1]
+            cell.useCard(card)
+            return cell
+        }
     }
     
     override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {

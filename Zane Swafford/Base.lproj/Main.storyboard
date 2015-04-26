@@ -7,6 +7,13 @@
     <customFonts key="customFonts">
         <mutableArray key="MerriweatherSans-Bold.otf">
             <string>MerriweatherSans-Bold</string>
+            <string>MerriweatherSans-Bold</string>
+            <string>MerriweatherSans-Bold</string>
+            <string>MerriweatherSans-Bold</string>
+            <string>MerriweatherSans-Bold</string>
+        </mutableArray>
+        <mutableArray key="Neuton-Regular.ttf">
+            <string>Neuton-Regular</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -15,13 +22,63 @@
             <objects>
                 <tableViewController id="O2m-Ky-Glv" customClass="CardTableViewController" customModule="Zane_Swafford" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="360" sectionHeaderHeight="22" sectionFooterHeight="22" id="VS2-e1-Kmu">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <color key="sectionIndexTrackingBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="CardTableViewCell" rowHeight="350" id="YDj-m0-7cJ" customClass="CardTableViewCell" customModule="Zane_Swafford" customModuleProvider="target">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="Intro" rowHeight="350" id="U7y-Em-iDf" customClass="IntroTableViewCell" customModule="Zane_Swafford" customModuleProvider="target">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="U7y-Em-iDf" id="3JH-hR-5kf">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Howdy," textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wsA-Eq-eLI">
+                                            <rect key="frame" x="126" y="116" width="124" height="42"/>
+                                            <fontDescription key="fontDescription" name="MerriweatherSans-Bold" family="Merriweather Sans" pointSize="32"/>
+                                            <color key="textColor" red="0.74509803921568629" green="0.74509803921568629" blue="0.74509803921568629" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                            <color key="shadowColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        </label>
+                                        <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Name is Zane" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P4z-96-olv">
+                                            <rect key="frame" x="47" y="166" width="281" height="42"/>
+                                            <fontDescription key="fontDescription" name="MerriweatherSans-Bold" family="Merriweather Sans" pointSize="32"/>
+                                            <color key="textColor" red="0.74509803921568629" green="0.74509803921568629" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                            <color key="shadowColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        </label>
+                                        <imageView hidden="YES" userInteractionEnabled="NO" alpha="0.29999999999999966" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="light-down" translatesAutoresizingMaskIntoConstraints="NO" id="aPA-Lq-n0h">
+                                            <rect key="frame" x="138" y="306" width="98" height="36"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="100" id="4fp-mB-hw3"/>
+                                                <constraint firstAttribute="height" constant="40" id="9QC-wt-qgF"/>
+                                            </constraints>
+                                        </imageView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    <constraints>
+                                        <constraint firstAttribute="centerX" secondItem="wsA-Eq-eLI" secondAttribute="centerX" id="3VB-kj-wVk"/>
+                                        <constraint firstItem="aPA-Lq-n0h" firstAttribute="bottom" secondItem="3JH-hR-5kf" secondAttribute="bottomMargin" constant="4" id="4qA-ek-aMX"/>
+                                        <constraint firstAttribute="centerY" secondItem="P4z-96-olv" secondAttribute="centerY" constant="-12" id="8Xm-jP-Tgi"/>
+                                        <constraint firstItem="wsA-Eq-eLI" firstAttribute="top" relation="greaterThanOrEqual" secondItem="3JH-hR-5kf" secondAttribute="topMargin" constant="20" id="JkW-3Q-6va"/>
+                                        <constraint firstAttribute="centerX" secondItem="P4z-96-olv" secondAttribute="centerX" id="SbF-3b-X79"/>
+                                        <constraint firstAttribute="centerX" secondItem="aPA-Lq-n0h" secondAttribute="centerX" id="Zep-Hq-zbZ"/>
+                                        <constraint firstItem="P4z-96-olv" firstAttribute="top" secondItem="wsA-Eq-eLI" secondAttribute="bottom" constant="8" id="rfT-ac-c1A"/>
+                                    </constraints>
+                                    <variation key="default">
+                                        <mask key="constraints">
+                                            <exclude reference="JkW-3Q-6va"/>
+                                        </mask>
+                                    </variation>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="downImage" destination="aPA-Lq-n0h" id="eoB-I8-wZu"/>
+                                    <outlet property="howdyLabel" destination="wsA-Eq-eLI" id="Q1p-xh-TX5"/>
+                                    <outlet property="nameLabel" destination="P4z-96-olv" id="Irp-Nc-Ap0"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="Card" rowHeight="350" id="YDj-m0-7cJ" customClass="CardTableViewCell" customModule="Zane_Swafford" customModuleProvider="target">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="YDj-m0-7cJ" id="M6D-h8-zVf">
                                     <autoresizingMask key="autoresizingMask"/>
@@ -29,7 +86,7 @@
                                         <view clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BUb-Gu-cSf" userLabel="Card View">
                                             <rect key="frame" x="20" y="32" width="560" height="280"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CnS-J8-Rb6" userLabel="Cover Image View">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CnS-J8-Rb6" userLabel="Cover Image View">
                                                     <rect key="frame" x="0.0" y="0.0" width="568" height="160"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="160" id="ab6-qa-RJr"/>
@@ -39,7 +96,7 @@
                                                     <rect key="frame" x="8" y="168" width="544" height="104"/>
                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                     <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                                    <fontDescription key="fontDescription" name="MerriweatherSans-Bold" family="Merriweather Sans" pointSize="19"/>
+                                                    <fontDescription key="fontDescription" name="Neuton-Regular" family="Neuton" pointSize="19"/>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                 </textView>
                                             </subviews>
@@ -77,16 +134,60 @@
                                     <outlet property="coverImageView" destination="CnS-J8-Rb6" id="JVh-RR-5yQ"/>
                                 </connections>
                             </tableViewCell>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="Outro" rowHeight="350" id="ado-sR-gJH">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ado-sR-gJH" id="0pP-nb-2Ec">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="❤︎" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l9X-3x-zU1">
+                                            <rect key="frame" x="160" y="148" width="55" height="55"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="55" id="Eyv-7A-tQf"/>
+                                                <constraint firstAttribute="width" constant="55" id="vyb-t9-nua"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="MerriweatherSans-Bold" family="Merriweather Sans" pointSize="64"/>
+                                            <color key="textColor" red="1" green="0.40000000596046448" blue="0.40000000596046448" alpha="0.29999999999999999" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="in Kansas" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rRr-jH-pX9">
+                                            <rect key="frame" x="109" y="205" width="157" height="41"/>
+                                            <fontDescription key="fontDescription" name="MerriweatherSans-Bold" family="Merriweather Sans" pointSize="32"/>
+                                            <color key="textColor" red="0.74509803921568629" green="0.74509803921568629" blue="0.74509803921568629" alpha="0.29999999999999999" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Made With" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hXe-2H-5L5">
+                                            <rect key="frame" x="99" y="103" width="176" height="41"/>
+                                            <fontDescription key="fontDescription" name="MerriweatherSans-Bold" family="Merriweather Sans" pointSize="32"/>
+                                            <color key="textColor" red="0.74509803919999995" green="0.74509803919999995" blue="0.74509803919999995" alpha="0.29999999999999999" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    <constraints>
+                                        <constraint firstAttribute="centerX" secondItem="hXe-2H-5L5" secondAttribute="centerX" id="7m6-2Q-xyR"/>
+                                        <constraint firstItem="rRr-jH-pX9" firstAttribute="top" secondItem="l9X-3x-zU1" secondAttribute="bottom" constant="2" id="J1g-lZ-1pQ"/>
+                                        <constraint firstAttribute="centerY" secondItem="l9X-3x-zU1" secondAttribute="centerY" id="Nem-4P-Yqv"/>
+                                        <constraint firstAttribute="centerX" secondItem="rRr-jH-pX9" secondAttribute="centerX" id="TDX-xH-Juv"/>
+                                        <constraint firstItem="l9X-3x-zU1" firstAttribute="top" secondItem="hXe-2H-5L5" secondAttribute="bottom" constant="4" id="hDB-34-ZUG"/>
+                                        <constraint firstAttribute="centerX" secondItem="l9X-3x-zU1" secondAttribute="centerX" id="yvg-bG-aj4"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </tableViewCell>
                         </prototypes>
                         <connections>
                             <outlet property="dataSource" destination="O2m-Ky-Glv" id="zvw-Wl-Kwn"/>
                             <outlet property="delegate" destination="O2m-Ky-Glv" id="Pmn-tM-Fnw"/>
                         </connections>
                     </tableView>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KsJ-A9-Qg0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="261" y="414"/>
+            <point key="canvasLocation" x="260.5" y="413.5"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="light-down" width="400" height="200"/>
+    </resources>
 </document>

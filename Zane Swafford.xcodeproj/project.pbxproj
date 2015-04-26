@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F8EE1571AEC46090036A2E7 /* IntroTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8EE1561AEC46090036A2E7 /* IntroTableViewCell.swift */; };
 		2FC65CD41AE81695006338E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC65CD31AE81695006338E7 /* AppDelegate.swift */; };
 		2FC65CD91AE81695006338E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FC65CD71AE81695006338E7 /* Main.storyboard */; };
 		2FC65CDB1AE81695006338E7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FC65CDA1AE81695006338E7 /* Images.xcassets */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2F8EE1561AEC46090036A2E7 /* IntroTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroTableViewCell.swift; sourceTree = "<group>"; };
 		2FC65CCE1AE81695006338E7 /* Zane Swafford.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Zane Swafford.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FC65CD21AE81695006338E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2FC65CD31AE81695006338E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -95,6 +97,7 @@
 			children = (
 				2FC65CD31AE81695006338E7 /* AppDelegate.swift */,
 				2FC65CF31AE8173F006338E7 /* CardTableViewController.swift */,
+				2F8EE1561AEC46090036A2E7 /* IntroTableViewCell.swift */,
 				2FC65CF91AE81F5E006338E7 /* CardTableViewCell.swift */,
 				2FC65D031AE8A970006338E7 /* UIColorHelpers.swift */,
 				2FC65CF51AE8185C006338E7 /* Card.swift */,
@@ -241,6 +244,7 @@
 			files = (
 				2FC65CFA1AE81F5E006338E7 /* CardTableViewCell.swift in Sources */,
 				2FC65CF41AE8173F006338E7 /* CardTableViewController.swift in Sources */,
+				2F8EE1571AEC46090036A2E7 /* IntroTableViewCell.swift in Sources */,
 				2FC65D021AE83C88006338E7 /* UIViewHelpers.swift in Sources */,
 				2FC65CF61AE8185C006338E7 /* Card.swift in Sources */,
 				2FC65D041AE8A970006338E7 /* UIColorHelpers.swift in Sources */,
