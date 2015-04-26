@@ -118,8 +118,10 @@ class CardTableViewController: UITableViewController {
                 [weak self] (data: CMDeviceMotion!, error: NSError!) in
                 var rotation = atan2(data.gravity.x, 1) * -0.16
                 
-                for cell in self?.tableView.visibleCells() as! [CardTableViewCell] {
-                    cell.cardView.transform = CGAffineTransformMakeRotation(CGFloat(rotation))
+                for cell in self!.tableView.visibleCells(){
+                    if let c = cell as? CardTableViewCell {
+                        c.cardView.transform = CGAffineTransformMakeRotation(CGFloat(rotation))
+                    }
                 }
             }
         } else {

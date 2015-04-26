@@ -1,29 +1,29 @@
 {
     "cards" :  [
                    {
-                        "text": "This is a test.",
+                        "text": "This is my face. Beard subject to Change",
                         "coverPhoto": "car.jpg",
                         "photoAlbum": ["", "", ""],
                         "url": "http://www.otters.io",
                         "location": [0.0, 0.0]
                     },
                     {
-                        "text": "This is a test.",
+                        "text": "I'm a student at Fort Hays State University. I'm studying Computer Science and Spanish",
                         "coverPhoto": "car.jpg",
                         "photoAlbum": ["", "", ""],
                         "url": "http://www.otters.io",
                         "location": [0.0, 0.0]
                     },
                     {
-                        "text": "This is a test.",
+                        "text": "I love building apps, blogging, and working on my tiny car.",
                         "coverPhoto": "car.jpg",
                         "photoAlbum": ["", "", ""],
                         "url": "http://www.otters.io",
                         "location": [0.0, 0.0]
                     },
                     {
-                        "text": "This is a test.",
-                        "coverPhoto": "car.jpg",
+                        "text": "Looking over all these submissions must be a lot of work. You deserve a puppy!",
+                        "coverPhoto": "puppy.png",
                         "photoAlbum": [],
                         "url": "",
                         "location": []
